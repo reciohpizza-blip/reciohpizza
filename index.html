@@ -4,13 +4,182 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Reci-Oh Pizza</title>
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#efe3c8}
-img{width:100%;height:auto;display:block}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #efe3c8;
+  overflow-x: hidden;
+}
+
+/* This keeps the full design clean on desktop */
+.page {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.page img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Invisible clickable areas over the image */
+.hotspot {
+  position: absolute;
+  display: block;
+  z-index: 10;
+}
+
+/* Main Book Betty button */
+.book-main {
+  left: 9.8%;
+  top: 47.2%;
+  width: 12.5%;
+  height: 5.2%;
+}
+
+/* See the Menu */
+.menu-link {
+  left: 3.5%;
+  top: 69.2%;
+  width: 11%;
+  height: 4.5%;
+}
+
+/* Meet Betty */
+.meet-betty {
+  left: 31%;
+  top: 78.2%;
+  width: 9.5%;
+  height: 4.2%;
+}
+
+/* Vibe / Get in Touch */
+.vibe-contact {
+  left: 57.5%;
+  top: 78.4%;
+  width: 11.5%;
+  height: 4.5%;
+}
+
+/* Main contact box button */
+.main-contact {
+  right: 8.5%;
+  top: 67.5%;
+  width: 13.5%;
+  height: 6%;
+}
+
+/* Instagram icon */
+.instagram {
+  right: 8.2%;
+  top: 2.5%;
+  width: 3.5%;
+  height: 5%;
+}
+
+/* Facebook icon */
+.facebook {
+  right: 3.6%;
+  top: 2.5%;
+  width: 3.5%;
+  height: 5%;
+}
+
+/* Mobile: show the whole poster cleanly without cropping */
+@media (max-width: 768px) {
+  body {
+    background: #efe3c8;
+  }
+
+  .page {
+    width: 100%;
+  }
+
+  .page img {
+    width: 100%;
+    height: auto;
+  }
+
+  .book-main {
+    left: 9%;
+    top: 46.5%;
+    width: 16%;
+    height: 5.5%;
+  }
+
+  .menu-link {
+    left: 3%;
+    top: 68%;
+    width: 14%;
+    height: 5%;
+  }
+
+  .meet-betty {
+    left: 30%;
+    top: 77%;
+    width: 13%;
+    height: 5%;
+  }
+
+  .vibe-contact {
+    left: 57%;
+    top: 77.5%;
+    width: 14%;
+    height: 5%;
+  }
+
+  .main-contact {
+    right: 6%;
+    top: 66%;
+    width: 18%;
+    height: 7%;
+  }
+
+  .instagram,
+  .facebook {
+    top: 2%;
+    width: 5%;
+    height: 5%;
+  }
+
+  .instagram {
+    right: 9%;
+  }
+
+  .facebook {
+    right: 3%;
+  }
+}
 </style>
 </head>
+
 <body>
-<img src="recioh-homepage.png" alt="Reci-Oh Pizza">
+
+<main class="page">
+  <img src="recioh-homepage.png" alt="Reci-Oh Pizza homepage">
+
+  <a class="hotspot book-main" href="mailto:reciohpizza@gmail.com?subject=Booking%20Betty"></a>
+  <a class="hotspot menu-link" href="mailto:reciohpizza@gmail.com?subject=Pizza%20Menu"></a>
+  <a class="hotspot meet-betty" href="mailto:reciohpizza@gmail.com?subject=Meet%20Betty"></a>
+  <a class="hotspot vibe-contact" href="mailto:reciohpizza@gmail.com?subject=Private%20Hire%20Booking"></a>
+  <a class="hotspot main-contact" href="mailto:reciohpizza@gmail.com?subject=Booking%20Betty"></a>
+
+  <a class="hotspot instagram" href="https://www.instagram.com/reciohpizza/" target="_blank" rel="noopener"></a>
+  <a class="hotspot facebook" href="https://www.facebook.com/" target="_blank" rel="noopener"></a>
+</main>
+
 </body>
 </html>
