@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Reci-Oh Pizza</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
 
 <style>
 
@@ -17,125 +16,83 @@ box-sizing:border-box;
 
 body{
 background:#efe3c8;
-font-family:Arial,sans-serif;
-color:#2d2d2d;
+overflow-x:hidden;
 }
 
-.hero{
-width:100%;
-min-height:100vh;
-background:url('recioh-homepage.png') center top/cover no-repeat;
-display:flex;
-align-items:flex-start;
-justify-content:flex-start;
-padding:6vw;
+.page{
 position:relative;
+width:100%;
 }
 
-.overlay{
-max-width:520px;
-margin-top:5vw;
-}
-
-.logo-title{
-font-family:'Oswald',sans-serif;
-font-size:7vw;
-line-height:0.9;
-color:#8f1e17;
-text-transform:uppercase;
-}
-
-.logo-title span{
+.page img{
+width:100%;
 display:block;
-color:#5c7148;
+height:auto;
 }
 
-.tagline{
-font-family:'Pacifico',cursive;
-font-size:2.5vw;
-margin-top:10px;
-color:#556647;
-}
-
-.desc{
-margin-top:30px;
-font-size:1.3vw;
-line-height:1.7;
-max-width:420px;
-}
-
-.btn-group{
-margin-top:30px;
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.btn{
-background:#9d2219;
-color:white;
-padding:18px 32px;
-text-decoration:none;
-font-weight:bold;
-border-radius:4px;
-transition:0.2s;
-display:inline-block;
-}
-
-.btn:hover{
-transform:translateY(-2px);
-opacity:0.9;
-}
-
-.footer-links{
+/* BOOK BETTY BUTTON */
+.book-betty{
 position:absolute;
-bottom:30px;
-left:50%;
-transform:translateX(-50%);
-display:flex;
-gap:30px;
-font-weight:bold;
-letter-spacing:2px;
-font-size:14px;
-color:#556647;
+left:4%;
+top:42%;
+width:180px;
+height:60px;
+z-index:10;
+display:block;
+}
+
+/* GET IN TOUCH BUTTON */
+.contact-button{
+position:absolute;
+right:8%;
+bottom:7%;
+width:280px;
+height:80px;
+z-index:10;
+display:block;
+}
+
+/* INSTAGRAM ICON */
+.instagram-link{
+position:absolute;
+right:7%;
+top:1%;
+width:50px;
+height:50px;
+z-index:10;
+display:block;
+}
+
+/* FACEBOOK ICON */
+.facebook-link{
+position:absolute;
+right:2%;
+top:1%;
+width:50px;
+height:50px;
+z-index:10;
+display:block;
 }
 
 @media(max-width:900px){
 
-.hero{
-background-position:center;
-padding:40px 25px;
+.book-betty{
+width:120px;
+height:45px;
+top:39%;
 }
 
-.overlay{
-max-width:100%;
-margin-top:30px;
+.contact-button{
+width:180px;
+height:60px;
+right:5%;
+bottom:5%;
 }
 
-.logo-title{
-font-size:18vw;
-}
-
-.tagline{
-font-size:7vw;
-}
-
-.desc{
-font-size:4vw;
-max-width:100%;
-}
-
-.btn{
-width:100%;
-text-align:center;
-}
-
-.footer-links{
-font-size:10px;
-gap:10px;
-flex-wrap:wrap;
-text-align:center;
-width:90%;
+.instagram-link,
+.facebook-link{
+width:35px;
+height:35px;
 }
 
 }
@@ -145,47 +102,29 @@ width:90%;
 
 <body>
 
-<section class="hero">
+<div class="page">
 
-<div class="overlay">
+<img src="recioh-homepage.png" alt="Reci-Oh Pizza">
 
-<h1 class="logo-title">
-RECI-OH!
-<span>PIZZA</span>
-</h1>
-
-<p class="tagline">Street Pizza Done Right</p>
-
-<div class="desc">
-Artisan neapolitan pizza. Top quality ingredients.<br>
-Cooked hot. Served fresh.<br>
-From Betty, our 1974 Commer PB.
-</div>
-
-<div class="btn-group">
-
-<a class="btn"
+<a class="book-betty"
 href="mailto:reciohpizza@gmail.com?subject=Booking%20Betty">
-BOOK BETTY
 </a>
 
-<a class="btn"
+<a class="contact-button"
+href="mailto:reciohpizza@gmail.com?subject=Booking%20Betty">
+</a>
+
+<a class="instagram-link"
 href="https://instagram.com/reciohpizza"
 target="_blank">
-INSTAGRAM
+</a>
+
+<a class="facebook-link"
+href="https://facebook.com"
+target="_blank">
 </a>
 
 </div>
-
-</div>
-
-<div class="footer-links">
-<span>RECI-OH PIZZA</span>
-<span>STREET PIZZA</span>
-<span>DONE RIGHT</span>
-</div>
-
-</section>
 
 </body>
 </html>
