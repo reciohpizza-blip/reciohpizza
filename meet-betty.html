@@ -13,9 +13,16 @@ body{
     color:#333;
 }
 
+.intro{
+    max-width:900px;
+    margin:auto;
+    padding:50px 20px 25px;
+    text-align:center;
+}
+
 .hero{
     max-width:1000px;
-    margin:40px auto 0;
+    margin:0 auto 35px;
     padding:0 20px;
 }
 
@@ -30,13 +37,13 @@ body{
 .content{
     max-width:900px;
     margin:auto;
-    padding:50px 20px 80px;
+    padding:20px 20px 80px;
     text-align:center;
 }
 
 h1{
     font-size:3rem;
-    margin-bottom:20px;
+    margin:0 0 18px;
     color:#2f5d43;
 }
 
@@ -72,17 +79,42 @@ p{
 .back-home:hover{
     opacity:0.9;
 }
+
+@media(max-width:700px){
+    .intro{
+        padding-top:35px;
+    }
+
+    h1{
+        font-size:2.4rem;
+    }
+
+    h2{
+        font-size:1.7rem;
+    }
+
+    p{
+        font-size:1.05rem;
+    }
+}
 </style>
 </head>
 
 <body>
+
+<div class="intro">
+    <h1>Meet Betty</h1>
+
+    <p>
+        The story behind our 1974 Commer PB and the journey to creating Reci-Oh Pizza.
+    </p>
+</div>
 
 <div class="hero">
     <img src="betty-mockup.png.png" alt="Betty Mockup">
 </div>
 
 <div class="content">
-    <h1>Meet Betty</h1>
 
     <p>
         Betty is our 1974 Commer PB and the heart of Reci-Oh Pizza.
@@ -123,6 +155,7 @@ p{
     </p>
 
     <a class="back-home" href="index.html">Back Home</a>
+
 </div>
 
 </body>
