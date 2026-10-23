@@ -39,12 +39,24 @@ body{background:#efe3c8;overflow-x:hidden}
 
 /* Email in contact card */
 .email-contact{right:7.8%;top:78.5%;width:15%;height:3.3%}
+
+/* Real photographs of Betty, placed over the original homepage artwork. */
+.page .betty-photo{position:absolute;display:block;object-fit:cover;z-index:5}
+.page .betty-hero{left:51.5%;top:0;width:48.5%;height:51.25%;object-position:50% 50%}
+.page .betty-story{left:43.95%;top:56.35%;width:7.85%;height:14.8%;object-position:30% 50%}
+.page .betty-vibe{left:66.5%;top:51.8%;width:15.1%;height:31.9%;object-position:28% 50%;border-radius:0 5px 5px 0}
+.instagram-top,.facebook-top{color:#fff;background:#233a2ec4;border-radius:24%;padding:.25%;height:auto;aspect-ratio:1}
+.hotspot svg{width:100%;height:100%;display:block}
+.hotspot:focus-visible{outline:3px solid #cc3025;outline-offset:3px}
 </style>
 </head>
 
 <body>
 <main class="page">
-  <img src="recioh-homepage.png" alt="Reci-Oh Pizza homepage">
+  <img src="recioh-homepage.png" alt="Reci-Oh Pizza — Street Pizza Done Right. Authentic Neapolitan pizza from Betty, our 1974 Commer PB. Weddings, parties, markets and private hire.">
+  <img class="betty-photo betty-hero" src="betty-real.jpg" alt="Betty, our real pastel green and white 1974 Commer PB pizza van, with her service hatch open" fetchpriority="high" decoding="async">
+  <img class="betty-photo betty-story" src="betty-real.jpg" alt="Betty after her restoration" loading="lazy">
+  <img class="betty-photo betty-vibe" src="betty-real.jpg" alt="Betty’s cab and open service hatch" loading="lazy">
 
   <a class="hotspot book-main" href="mailto:reciohpizza@gmail.com?subject=Booking%20Betty" aria-label="Book Betty"></a>
   <a class="hotspot menu-link" href="menu.html" aria-label="View menu"></a>
@@ -52,8 +64,8 @@ body{background:#efe3c8;overflow-x:hidden}
   <a class="hotspot vibe-contact" href="mailto:reciohpizza@gmail.com?subject=Private%20Hire%20Booking" aria-label="Private hire booking"></a>
   <a class="hotspot main-contact" href="mailto:reciohpizza@gmail.com?subject=Booking%20Betty" aria-label="Get in touch"></a>
 
-  <a class="hotspot instagram-top" href="https://www.instagram.com/reciohpizza/" target="_blank" rel="noopener" aria-label="Instagram"></a>
-  <a class="hotspot facebook-top" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"></a>
+  <a class="hotspot instagram-top" href="https://www.instagram.com/reciohpizza/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+  <a class="hotspot facebook-top" href="https://www.facebook.com/reciohpizza/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 22v-9h3l.5-4H14V7c0-1 .3-2 2-2h2V1.5C17 1.2 16 1 15 1c-3 0-5 2-5 5v3H7v4h3v9z"/></svg></a>
 
   <a class="hotspot instagram-contact" href="https://www.instagram.com/reciohpizza/" target="_blank" rel="noopener" aria-label="Instagram contact"></a>
   <a class="hotspot email-contact" href="mailto:reciohpizza@gmail.com?subject=Booking%20Betty" aria-label="Email Reci-Oh Pizza"></a>
